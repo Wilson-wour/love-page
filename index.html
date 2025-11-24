@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Song -->
+    <audio id="bg-music" autoplay loop>
+        <source src="song.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Slideshow -->
+    <div class="slideshow">
+        <img id="slide" src="images/1.jpg">
+    </div>
+
+    <!-- Message -->
+    <div class="message">
+        <h1>For My Queen ❤️</h1>
+        <p>
+            Every moment with you is a blessing.<br>
+            You are the calm in my storms, the smile in my mornings,<br>
+            and the peace in my soul.<br>
+            I love you more than words can ever describe.
+        </p>
+    </div>
+
+    <!-- Love Game -->
+    <div class="game">
+        <h2>💕 A Little Love Game 💕</h2>
+        <p>Pick one:</p>
+
+        <button onclick="choose('A kiss 😘')">Kiss</button>
+        <button onclick="choose('A long warm hug 🤗')">Hug</button>
+        <button onclick="choose('A romantic date night 🌙')">Date Night</button>
+        <button onclick="choose('A surprise from me 🎁')">Surprise</button>
+
+        <h3 id="result"></h3>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
