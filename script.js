@@ -1,12 +1,20 @@
-// List of images for slideshow
-let images = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"];
+// List of images using raw GitHub URLs
+let images = [
+    "https://github.com/wilson-wour/love-page/blob/main/images/1.jpg?raw=true",
+    "https://github.com/wilson-wour/love-page/blob/main/images/2.jpg?raw=true",
+    "https://github.com/wilson-wour/love-page/blob/main/images/3.jpg?raw=true",
+    "https://github.com/wilson-wour/love-page/blob/main/images/4.jpg?raw=true",
+    "https://github.com/wilson-wour/love-page/blob/main/images/5.jpg?raw=true"
+];
+
 let index = 0;
 
 function changeSlide() {
     index = (index + 1) % images.length;
-    document.getElementById("slide").src = "images/" + images[index];
+    document.getElementById("slide").src = images[index];
 }
 
+// Change slide every 3 seconds
 setInterval(changeSlide, 3000);
 
 // Love Game response
